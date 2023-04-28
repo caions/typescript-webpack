@@ -1,0 +1,15 @@
+service: lambdahellotestebuild
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
+  #- serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+
+functions:
+  hello:
+    handler: handler.hello
